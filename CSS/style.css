@@ -1,0 +1,137 @@
+/*ADD other media queries liek IZRA Suggested@media all and (max-width: 600px)*/
+@media screen and (max-width: 360px) {
+	body {
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width: 760px) {
+	body {
+		font-size: 1.5rem;
+	}
+}
+@media screen and (max-width: 960px) {
+	body {
+		font-size: 1.2rem;
+	}
+}
+@media screen and (max-width: 1100px) {
+	body {
+		font-size: 1.5rem;
+	}
+}
+
+/*Box Model Hack */
+* {
+	box-sizing: border-box;
+	font-family: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+/* Clear fix hack
+for floats positioning content
+
+*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* percentage is for mobile responsivness
+
+ REMS RESEARCH
+*/
+
+body {
+	background-color: #4c6684;
+	height: 100vh;
+	width: max-width;
+	/* width: 100vh; */
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 1rem;
+	flex-direction: row;
+	display: flex;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.headerSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+}
+
+.headerSection h1 {
+	display: flex;
+	position: relative;
+	display: flex;
+	text-align: left;
+	font: bolder;
+	color: black;
+	font-size: 3.7rem;
+}
+
+.idContainer {
+	display: flex;
+	flex-direction: column;
+	margin-left: 15rem;
+	width: max-content;
+}
+
+#imgLogo {
+	width: 50rem;
+	/* transform: rotateY(180deg); */
+}
+.idLinks {
+	display: flex;
+	flex-direction: row;
+	font-size: 2.5rem;
+}
+
+.idLinks i {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding-right: 40px;
+}
+
+h5 {
+	color: black;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 2vw;
+	display: block;
+	text-align: center;
+}
+
+.fa-bitcoin {
+	color: black;
+}
+
+/*- links at the bootom of the page! put the 4 boxes together - easier way is flex box*/
+
+/* #link1,
+#link2,
+#link3,
+#link4 {
+	float: left;
+	width: 50%;
+	height: 50vh;
+	color: black;
+} */
